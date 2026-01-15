@@ -39,6 +39,6 @@ I needed a custom, lightweight email service for **Baya**, a real-time polling a
 ## Roadmap
 - [x] Project Setup & Database Connection
 - [x] Email Schema Design
-- [ ] Email Sending Logic (Nodemailer)
+- [x] Email Sending Logic (Nodemailer)
 - [ ] Scheduling Logic (Cron jobs)
 - [ ] API Endpoints
