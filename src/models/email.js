@@ -1,8 +1,8 @@
-const moongose = require('mongoose');
-const schema = moongose.Schema;
+const mongoose = require('mongoose');
+const schema = mongoose.Schema;
 
 const emailSchema = new schema({
-    receipient: {
+    recipient: {
         type: String,
         required: true,
     },
@@ -24,10 +24,10 @@ const emailSchema = new schema({
     },
     sentAt: {
         type: Date,
-        default: Date.now,
-    },
-})
+        
+    }, 
+},{ timestamps: true });
 
-const Email = moongose.model('Email', emailSchema);
+const Email = mongoose.model('Email', emailSchema);
 
 module.exports = Email;
